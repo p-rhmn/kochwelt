@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/meal2.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Taco mit Avocado</title>
+    <script src="js/script.js"></script>
+  </head>
+
+  <body onload="includeHTML()">
+    <div w3-include-html="tamplates/header.html"></div>
+
+    <div class="content-body">
+      <div class="recipe-head">
+        <div class="recipe-title">
+          <h1 class="taco-title">Tacos mit Avocado</h1>
+        </div>
+        <div class="recipe-infobox">
+          <img class="recipe-pic-taco" src="img/tacos.jpg" />
+          <div class="section-text">
+            <h2 class="small-info">Zubereitung:</h2>
+            <div class="small-sub-1">
+              <div class="small-sub-1">
+                <img
+                  class="clock-icon"
+                  src="img/icons/clock-regular.svg"
+                  alt="clock"
+                />
+                <span>20min</span>
+              </div>
+              <div class="small-sub-1">
+                <img
+                  class="brain-icon"
+                  src="img/icons/brain-solid.svg"
+                  alt="clock"
+                />
+                <span>Einfach</span>
+              </div>
+            </div>
+
+            <p class="info-text">
+              Avocado und Salsa mit Chiliflocken bringen Wumms ins Spiel. Das
+              Beste an den Tacos: Kannst du mit einer Hand essen. Dann passt in
+              die andere noch ein Bier oder eine selbst gemachte Limo.
+            </p>
+            <div class="creator">
+              <img class="profile-pic" src="img/profile.png" alt="profile" />
+              <p class="azra-text">Rezept von <b>Gökay</b></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="input-field bg2-res bg2">
+        <input
+          id="number"
+          class="inp"
+          type="number"
+          min="0"
+          placeholder="Personen"
+        />
+        <button
+          onclick="calc(amountNumberMeal1, ingredients1, unit1)"
+          class="btn"
+          id="amount_portion2"
+        >
+          Rechnen
+        </button>
+      </div>
+
+      <table id="table-contain" class="table2">
+        <tbody class="tbody2">
+          <tr class="row-1">
+            <td id="td0">25</td>
+            <td>g</td>
+            <td class="td-name">Chiliflocken</td>
+          </tr>
+          <tr class="row-2">
+            <td id="td1">1</td>
+            <td>TL</td>
+            <td class="td-name">Salz</td>
+          </tr>
+          <tr class="row-1">
+            <td id="td2">1</td>
+            <td>TL</td>
+            <td class="td-name">Pfeffer</td>
+          </tr>
+          <tr class="row-2">
+            <td id="td3">4</td>
+            <td>EL</td>
+            <td class="td-name">Tabasco</td>
+          </tr>
+          <tr class="row-1">
+            <td id="td4">1</td>
+            <td>STK</td>
+            <td class="td-name">Kleine Zwiebel</td>
+          </tr>
+          <tr class="row-2">
+            <td id="td5">3</td>
+            <td>STK</td>
+            <td class="td-name">Knoblauchzehen</td>
+          </tr>
+          <tr class="row-1">
+            <td id="td6">1</td>
+            <td>STK</td>
+            <td class="td-name">Limette</td>
+          </tr>
+          <tr class="row-2">
+            <td id="td7">1</td>
+            <td>EL</td>
+            <td class="td-name">Öl</td>
+          </tr>
+          <tr class="row-1">
+            <td id="td8">350</td>
+            <td>g</td>
+            <td class="td-name">Rinderhackfleisch</td>
+          </tr>
+          <tr class="row-2">
+            <td id="td9">1</td>
+            <td>TL</td>
+            <td class="td-name">Kreuzkümmel</td>
+          </tr>
+          <tr class="row-1">
+            <td id="td10">1</td>
+            <td>EL</td>
+            <td class="td-name">Ingwerpulver</td>
+          </tr>
+          <tr class="row-2">
+            <td id="td11">150</td>
+            <td>g</td>
+            <td class="td-name">Vollmilch Jogurt</td>
+          </tr>
+          <tr class="row-1">
+            <td id="td12">100</td>
+            <td>g</td>
+            <td class="td-name">Mini Römersalar</td>
+          </tr>
+          <tr class="row-2">
+            <td id="td13">3</td>
+            <td>STK</td>
+            <td class="td-name">Tomaten</td>
+          </tr>
+          <tr class="row-1">
+            <td id="td14">150</td>
+            <td>g</td>
+            <td class="td-name">Mais</td>
+          </tr>
+          <tr class="row-2">
+            <td id="td15">2</td>
+            <td>STK</td>
+            <td class="td-name">Grüne Paprika</td>
+          </tr>
+          <tr class="row-1">
+            <td id="td16">1600</td>
+            <td>g</td>
+            <td class="td-name">Tacoshell</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="last-section">
+        <p class="last-section-text">
+          1. Zwiebel schälen und fein würfeln. Knoblauchzehen schälen und klein
+          hacken. Limette halbieren und den Saft auspressen. Öl in einer Pfanne
+          erhitzen. Hack darin ca. 5 Minuten krümelig anbraten. Zwiebeln, 2/3
+          des Knoblauchs, Ingwer und Kreuzkümmel zugeben und ca. 5 Minuten
+          weiterbraten. Mit Salz, Pfeffer und Tabasco würzen<br />
+          <br />
+          2. Avocados halbieren, Steine entfernen und Fruchtfleisch aus der
+          Schale lösen. Fruchtfleisch mit einer Gabel zerdrücken. Restlichen
+          Knoblauch, Joghurt und ein paar Tropfen Tabasco mit dem
+          Avocadofruchtfleisch mischen, mit Limettensaft und Salz abschmecken.
+          Salat waschen, trocken schütteln und in Streifen schneiden. Tomaten
+          waschen, putzen und in Würfel schneiden. Tomatenwürfel und Salat
+          mischen<br />
+          <br />
+          3. Hackmischung und Salat in die Tacoshells verteilen. Avocado-Joghurt
+          daraufgeben und mit Chiliflocken garnieren. Sofort servieren!
+        </p>
+      </div>
+    </div>
+    <div w3-include-html="tamplates/footer.html"></div>
+  </body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Rezept</title>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="css/meal1.css" />
+
+    <script src="js/script.js"></script>
+  </head>
+
+  <body onload="includeHTML()">
+    <div w3-include-html="tamplates/header.html"></div>
+
+    <div class="midl">
+      <div class="contain1">
+        <h1>Classic Oklahoma Fried Onion Burger</h1>
+      </div>
+      <img
+        class="burger"
+        id="start"
+        src="img/burger3.jpg"
+        width="100%"
+        height="400px"
+      />
+
+      <div class="icon">
+        <div class="icon-child">
+          <img src="img/icons/clock-regular.svg" width="15px" height="15px" />
+          10 Min Vorbereitungszeit.
+        </div>
+        <div class="icon-child">
+          <img src="img/icons/brain-solid.svg" width="15px" height="15px" />
+          simpel
+        </div>
+        <div class="icon-child">
+          <img
+            src="img/icons/calendar-alt-regular.svg"
+            width="15px"
+            height="15px"
+          />
+          16.07.2021
+        </div>
+      </div>
+
+      <div class="button-div">
+        <label class="label" for="number">Zutaten für</label>
+        <input id="number" min="1" max="100" value="1" />
+        <button
+          onclick="calc(amountNumberMeal0, ingredients0, unit0)"
+          class="button"
+        >
+          Portionen
+        </button>
+      </div>
+
+      <table class="table-contain" id="table-contain">
+        <tr class="row-1">
+          <td class="one">1</td>
+          <td class="three">Stk</td>
+          <td class="two">Burger Bun</td>
+        </tr>
+
+        <tr class="row-2">
+          <td class="one">180</td>
+          <td class="three">g</td>
+          <td class="two">Rinderhackfleisch mit 20-25% Fett</td>
+        </tr>
+
+        <tr class="row-1">
+          <td class="one">1</td>
+          <td class="three">Stk</td>
+          <td class="two">Gemüsezwiebel</td>
+        </tr>
+
+        <tr class="row-2">
+          <td class="one">2</td>
+          <td class="three">Stk</td>
+          <td class="two">Scheiben Kerrygold Burger Cheddar</td>
+        </tr>
+
+        <tr class="row-1">
+          <td class="one">1</td>
+          <td class="three">EL</td>
+          <td class="two">Butter</td>
+        </tr>
+
+        <tr class="row-2">
+          <td class="one">1/2</td>
+          <td class="three">TL</td>
+          <td class="two">Salz</td>
+        </tr>
+
+        <tr class="row-1">
+          <td class="one">1/2</td>
+          <td class="three">TL</td>
+          <td class="two">Pfeffer</td>
+        </tr>
+      </table>
+
+      <div>
+        <h2 class="h2">Zubereitung</h2>
+      </div>
+
+      <div class="icon-child2-contain">
+        <div class="icon-child2">
+          <img src="img/icons/clock-regular.svg" width="15px" height="15px" />
+          Gesamtzeit ca. 25 Minuten
+        </div>
+      </div>
+
+      <div>
+        <p class="p-text">
+          Als erstes werden die Zwiebel in sehr feine Ringe geschnitten. Sie
+          sollten nicht dicker als 1-2 mm sein. Auf die Zwiebeln wird dann
+          jeweils eine etwa 180g schwere Kugel Rinderhackfleisch gegeben. Zuerst
+          wird jedoch etwas Butter auf der Grillplatte zerlassen, die Burger
+          Buns aufgeschnitten und dann werden die Innenseiten der Buns kurz auf
+          der Platte angeröstet. Das Hackfleisch wird dann mit einem Burger
+          Smasher oder eine stabilen Pfannenwender auf den Zwiebeln platt
+          gedrückt. Anschließend wird Hackfleisch-Patty auf der Oberseite mit
+          Salz und Pfeffer gewürzt.
+          <br /><br />
+          Das Zwiebel-Hackfleisch-Patty wird nun weitere 2-3 Minuten bei hoher
+          Hitze auf der Zwiebelseite gegart, so dass die Zwiebeln weiter
+          karamellisieren. Wenn die Zwiebeln goldbraun sind, wird das Patty
+          gewendet und die Zwiebelseite wird ebenfalls mit Salz und Pfeffer
+          gewürzt. Das Patty wird für weitere 2-3 Minuten auf der
+          Hackfleischseite gegrillt, so dass diese Seite auch ordentliche
+          Röstaromen bekommen. Dann wird der Oklahoma Onion Burger mit zwei
+          Scheiben Cheddar belegt, die kurz angeschmolzen werden. Nun ist der
+          Oklahoma Fried Onion Burger auch schon fertig für den Zusammenbau.
+          <br /><br />
+          Da auf diesen Burger in seiner klassischen Form weder Salat, noch
+          Saucen, Gurken oder Tomaten kommen, wird das Patty einfach zwischen
+          die beiden angetoasteten Bunhälften gepackt und schon ist unser
+          Oklahoma Onion Burger fertig.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="h2">Rezept erstellt von</h2>
+      </div>
+
+      <div class="editor">
+        <img
+          class="img-profile"
+          src="img/profile.png"
+          width="100"
+          height="100px"
+        />
+        <h3>Murat</h3>
+      </div>
+    </div>
+
+    <div w3-include-html="tamplates/footer.html"></div>
+  </body>
+</html>

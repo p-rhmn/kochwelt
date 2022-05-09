@@ -1,0 +1,253 @@
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+                    Section1
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+.section1-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8em;
+  margin-bottom: 8em;
+  padding-top: 6em;
+}
+
+.section1-container img {
+  background-size: cover;
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 10px;
+  max-width: 300px;
+}
+
+.section1-text {
+  margin-left: 60px;
+}
+
+.section1-title {
+  text-align: left;
+}
+
+.section-text {
+  font-size: 30px;
+}
+
+.section1-btn {
+  display: inline-block;
+  padding: 15px 60px 15px 60px;
+  background-color: rgb(195, 224, 141);
+  color: rgb(10, 9, 9);
+  text-decoration: none;
+  border-radius: 2px;
+  margin: 1px;
+  font-weight: bold;
+}
+
+.section1-btn:hover {
+  background-color: rgba(122, 160, 51, 0.568);
+  font-weight: bold;
+}
+
+@media (max-width: 1000px) {
+  .section1-container {
+    padding-top: 6em;
+    flex-direction: column;
+  }
+  .section1-container img {
+    max-width: 100%;
+  }
+  .section1-title {
+    text-align: center;
+  }
+  .section1-text p {
+    font-size: 1.2rem;
+  }
+  .section1-text {
+    margin: 0;
+    text-align: center;
+  }
+  .section1-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .section1-container,
+  .section2-container {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 4em;
+    border-radius: 0px;
+    padding-top: 6em;
+  }
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+                    Section2
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+.section2-container {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.section2-bg {
+  background-image: url(../img/desk.jpg);
+  background-color: rgb(209, 209, 209);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  box-shadow: 10px 1px 20px 5px rgba(0, 0, 0, 0.418);
+  z-index: 10;
+}
+
+.menu-con {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title-menu {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 70px;
+  color: rgba(19, 18, 18, 0.993);
+}
+
+.h3title {
+  text-align: center;
+  color: rgb(20, 20, 20);
+}
+
+.pic_menu {
+  border: 1px solid rgba(56, 55, 55, 0.537);
+  width: 260px;
+  max-width: 300px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 10px rgba(19, 18, 18, 0.45);
+  position: relative;
+  z-index: 1;
+}
+
+.pic_menu:hover {
+  background: rgba(222, 184, 135, 0.575);
+  z-index: 10;
+  transform: scale(1.01);
+  transition: 300ms ease-in-out;
+}
+
+@media (max-width: 1200px) {
+  .section2-container {
+    margin: 0;
+  }
+  .menu-con {
+    flex-direction: column;
+  }
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+                    Section3
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+.section3-container {
+  margin-top: 3em;
+  margin-bottom: 3em;
+  font-size: 2rem;
+}
+
+.section3-title {
+  display: flex;
+  justify-content: center;
+}
+
+.bg3-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bg3-img {
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+ol {
+  font-size: 2rem;
+}
+
+@media (max-width: 1000px) {
+  .bg3-text {
+    flex-direction: column;
+  }
+  .order-list-reason {
+    padding: 0;
+  }
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+                    SECTION4
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+.section4-container {
+  background-color: rgba(108, 112, 112, 0.034);
+  height: 450px;
+  width: 100%;
+  margin-right: 50%;
+}
+
+.section4-lists {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  margin-right: 15%;
+  margin-left: 15%;
+}
+
+.section4-lists li a {
+  text-decoration: none;
+  color: black;
+}
+
+.section4-lists li a:hover {
+  transition: 200ms ease-in-out;
+  border-bottom: 1px solid black;
+  color: rgba(0, 0, 0, 0.555);
+}
+
+.section4-lists caption {
+  text-decoration: underline;
+}
+
+.section4-container ul {
+  list-style: none;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+}
+
+ul li {
+  padding: 0.1em;
+}
+
+@media (max-width: 1000px) {
+  ol {
+    text-align: center;
+  }
+}

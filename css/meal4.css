@@ -1,0 +1,232 @@
+.content-body {
+  background-image: url(/Kopie_Projekt1_Kochwelt/img/background0.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 12px;
+}
+
+.row-1 {
+  min-height: 40px;
+  display: flex;
+  background-color: #ffbe61;
+  justify-content: center;
+  align-items: center;
+}
+.row-2 {
+  min-height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.recipe-title {
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid;
+  color: rgb(71, 71, 71);
+  margin-top: 4em;
+}
+
+.taco-title {
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+
+.recipe-head {
+  padding-top: 0;
+}
+
+.recipe-infobox {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  margin-top: 8%;
+  margin-bottom: 8%;
+}
+
+.recipe-pic-taco {
+  width: 50%;
+  height: 25em;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.small-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff96009e;
+  border: 1px solid;
+  border-radius: 4px;
+  padding: 0.3em;
+  margin-top: 0;
+}
+
+.small-sub-1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.3em;
+}
+
+.clock-icon {
+  height: 35px;
+  width: auto;
+  margin-right: 0.2em;
+}
+
+.brain-icon {
+  height: 35px;
+  width: auto;
+  margin-right: 0.2em;
+}
+
+.creator {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100%;
+  border-radius: 50px;
+}
+
+.section-text {
+  width: 42%;
+}
+
+/*
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+                Section2/Tabelle
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+*/
+
+.table2 {
+  width: 100%;
+}
+
+.thead {
+  display: flex;
+  flex-direction: column;
+}
+
+.tbody2 {
+  display: flex;
+  flex-direction: column;
+}
+.th2 {
+  padding-right: 2.6%;
+}
+
+.tr2 {
+  min-height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.td-name {
+  padding-left: 6px;
+  min-width: 10%;
+}
+
+.input-field {
+  margin-left: 14%;
+  margin-bottom: 3%;
+}
+
+.inp {
+  text-align: center;
+  border-radius: 4px;
+  width: 17%;
+  height: 37px;
+}
+
+.btn {
+  background-color: #ff96009e;
+  border-radius: 4px;
+  color: rgb(71, 71, 71);
+  width: 17%;
+  height: 42px;
+}
+
+.input {
+  border: 0;
+  outline: 0;
+  border-bottom: 2px solid #ff9600;
+  background-color: white !important;
+  width: 25%;
+}
+
+.bg1 {
+  background-color: #ff96009e;
+  border-radius: 16px;
+}
+
+.last-section {
+  padding: 4%;
+  display: flex;
+  text-align: justify;
+}
+
+@media (max-width: 1250px) {
+  .taco-title {
+    font-size: 1.5em;
+  }
+  .info-text {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .content-body {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .recipe-title {
+    margin-top: 2em;
+  }
+  .recipe-infobox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .recipe-pic-taco {
+    margin-bottom: 5%;
+    width: 90%;
+  }
+  .input-field {
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 924px) {
+  .taco-title {
+    font-size: 1.4em;
+  }
+  .small-info {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 650px) {
+  .recipe-title {
+    font-size: 2rem;
+  }
+  .recipe-pic-taco {
+    width: 90%;
+  }
+  .btn {
+    width: 24%;
+  }
+  .inp {
+    width: 22%;
+  }
+}

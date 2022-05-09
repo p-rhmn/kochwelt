@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontakt</title>
+
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js"></script>
+  </head>
+
+  <body onload="includeHTML()">
+    <div w3-include-html="tamplates/header.html"></div>
+
+    <div class="form-container">
+      <form
+        class="contact-form"
+        action="http://gruppe-89.developerakademie.com/Kochwelt-Original/send_mail.php"
+        method="POST"
+      >
+        <h1>Kontakt</h1>
+
+        <div class="form-item">
+          <label id="name" for="name">Name</label>
+          <input
+            name="name"
+            class="input-fields"
+            type="text"
+            id="name"
+            required
+          />
+        </div>
+
+        <div class="form-item">
+          <label for="email">E-Mail</label>
+          <input class="input-fields" type="email" id="email-input" required />
+        </div>
+        <div class="form-item">
+          <label for="textfield">Nachricht</label>
+          <textarea name="message" required></textarea>
+          <button class="btn" type="submit">Senden</button>
+        </div>
+      </form>
+    </div>
+
+    <div w3-include-html="tamplates/footer.html"></div>
+  </body>
+</html>

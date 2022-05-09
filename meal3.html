@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pancakes</title>
+
+  
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/meal3.css">
+  <script src="js/script.js"></script>
+</head>
+
+<body onload="includeHTML()">
+  <div w3-include-html="tamplates/header.html"></div>
+
+
+
+  <section class="meal3-section">
+    <h1 class="meal3-maintitle">Pancakes</h1>
+    <img class="titlepicture" src="img/meal3.jpg" alt="" />
+    <div class="meal3-section-info">
+      <div class="info">
+        <img src="img/icons/clock-regular.svg" width="15px" height="15px" alt="clock" />
+        <span>20min</span>
+      </div>
+      <div class="info">
+        <img src="img/icons/brain-solid.svg" width="15px" height="15px" alt="brain" />
+        <span>simple</span>
+      </div>
+      <div class="info">
+        <img src="img/icons/calendar-alt-regular.svg" width="15px" height="15px" alt="calendar" />
+
+        <span>16.07.2021</span>
+      </div>
+    </div>
+    <div class="portion-input">
+      <label for="name" name="Portionen">Zutaten für:</label>
+      <input type="number" placeholder="1" min="1" max="100" value="1" name="Portionen" id="number" />
+      <button onclick="calc(amountNumberMeal2,ingredients2,unit2)"><b>Portionen</b></button>
+    </div>
+    <h2 class="meal3-title">Zutaten</h2>
+    <div class="table-style">
+      <table id="table-contain" class="table-data1">
+        
+        <tr>
+          <td class="table-amount">1</td>
+          <td class="table-unit">Stk</td>
+          <td id="meal3-ingredient-1" >Orange</td>
+        </tr>
+        <tr class="row-2">
+          <td class="table-amunt">200</td>
+          <td class="table-uit">ml</td>
+          <td>Orangensaft</td>
+        </tr>
+        <tr>
+          <td class="table-amount">3</td>
+          <td class="table-unit">Tl</td>
+          <td>Backpulver</td>
+        </tr>
+        <tr class="row-2">
+          <td class="table-amount">200</td>
+          <td class="table-unit">g</td>
+          <td>Mehl</td>
+        </tr>
+        <tr>
+          <td class="table-amount">250</td>
+          <td class="table-unit">ml</td>
+          <td>Milch</td>
+        </tr>
+         <tr class="row-2">
+          <td class="table-amount">1</td>
+          <td class="table-unit">EL</td>
+          <td>Zitronensaft</td>
+        </tr>
+        <tr>
+          <td class="table-amount">1</td>
+          <td class="table-unit">Pk.</td>
+          <td>Vanillezucker</td>
+        </tr>
+        <tr  class="row-2">
+          <td class="table-amount">1</td>
+          <td class="table-unit">Prise</td>
+          <td>Salz</td>
+        </tr>
+        <tr> 
+          <td class="table-amount">4</td>
+          <td class="table-unit">KL.M</td>
+          <td>Eier</td>
+        </tr>
+        <tr class="row-2">
+          <td class="table-amount">2</td>
+          <td class="table-unit">EL</td>
+          <td>Butterschmalz</td>
+        </tr>
+      </table>
+
+    </div>
+
+    </div>
+
+    
+    <div class="text-meal3">
+      <table class="table-data2">
+        <tr class="table-th1">
+          <th colspan="2">Nährwerte pro 100g</th>
+        </tr>
+        <tr class="table-bg1">
+          <td class="table-amount2">219</td>
+          <td class="table-unit2">kcal</td>
+          
+        </tr>
+        <tr>
+          <td class="table-amount2">28,6g</td>
+          <td class="table-unit2">KH</td>
+
+        </tr>
+        <tr class="table-bg1">
+          <td class="table-amount2">7g</td>
+          <td class="table-unit2">Zucker</td>
+
+        </tr>
+        <tr >
+          <td class="table-amount2">9,4g</td>
+          <td class="table-unit2">Fett</td>
+
+        </tr>
+        <tr class="table-bg1">
+          <td class="table-amount2">6,1g</td>
+          <td class="table-unit2">Protein</td>
+
+        </tr>
+        
+      </table>
+
+      
+      <ol class="preparation">
+        <h2 class="h2-preperation">Zubereitung:</h2>
+        <li>
+          Orange heiß waschen, die Schale dünn (ohne das Weiße) abschälen und in
+          feine Streifen schneiden. Orangensaft und Ahornsirup in einem kleinen
+          Topf erhitzen und bei starker Hitze auf die Hälfte einkochen. Beiseite
+          stellen.
+        </li>
+        <li>
+          Backpulver und Mehl mischen. Milch, Zitronensaft, Vanillezucker, 1
+          Prise Salz und Eier mit den Quirlen des Handrührers gut verrühren.
+          Mehlmischung nach und nach zugeben und langsam glatt rühren.
+        </li>
+        <li>
+          1 El Butterschmalz in einer großen Pfanne erhitzen. 6 kleine
+          Teigportionen in die Pfanne gießen und jeweils mit 1 Tl
+          Orangenschalenstreifen bestreuen. Bei mittlerer Hitze von jeder Seite
+          3-4 Min. goldbraun braten. Aus der Pfanne nehmen, erneut 1 El
+          Butterschmalz erhitzen und restliche Pfannkuchen ausbacken. Mit
+          Orangensirup beträufeln.
+        </li>
+      </ol>
+
+    </div>
+    <h3 class="meal3-profile-title">Rezept erstellt von</h3>
+    <div class="profile">
+      <img src="img/profile.png" alt="profilelogo" />
+      <span>Peter</span>
+    </div>
+  </section>
+
+  <div w3-include-html="tamplates/footer.html"></div>
+</body>
+
+</html>

@@ -1,0 +1,285 @@
+.meal3-maintitle {
+  font-size: 4rem;
+}
+
+.meal3-section {
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-top: 9em;
+}
+
+.titlepicture {
+  border-radius: 20px;
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+@media (max-width: 1200px) {
+  .titlepicture {
+    border-radius: 0;
+  }
+  .meal3-section {
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 4em;
+  }
+}
+
+.meal3-section-info {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  border-bottom: 1px solid black;
+}
+
+.meal3-section-info span {
+  background-color: rgba(128, 128, 128, 0.432);
+  padding: 7px;
+  border-radius: 4px;
+  margin: 5px;
+}
+
+@media (max-width: 600px) {
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.portion-input {
+  align-items: center;
+  padding: 2em;
+  font-size: 1.3rem;
+}
+
+.portion-input input {
+  padding: 0.45em;
+  border-radius: 10px;
+  margin-left: 1em;
+}
+
+.portion-input button {
+  background-color: rgb(201, 236, 135);
+  border: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-radius: 20px;
+  margin-left: 1em;
+  cursor: pointer;
+  border: none;
+}
+.portion-input input:focus {
+  border-radius: 0px;
+}
+
+.portion-input button:hover {
+  background-color: rgba(201, 236, 135, 0.692);
+}
+
+.meal3-title {
+  background-color: rgb(201, 236, 135);
+  margin: 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.row-2 {
+  background-color: rgba(153, 149, 149, 0.363);
+  padding: 2em;
+}
+
+.table-style {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+td:first-child {
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+td:last-child {
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+th:first-child {
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+th:last-child {
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.table-th1 th {
+  background-color: rgb(195, 224, 141);
+
+  text-align: center;
+  padding: 0.8em;
+}
+.table-th2 {
+  display: block;
+  background-color: rgb(195, 224, 141);
+  border-radius: 5px;
+  text-align: center;
+  padding: 0.8em;
+  width: 100%;
+}
+
+.table-data2 {
+  min-width: 350px;
+  max-width: 100%;
+}
+
+.table-data1 td {
+  border-collapse: collapse;
+  padding: 0.8em;
+  font-weight: bold;
+}
+.table-data2 td {
+  max-width: 100%;
+
+  padding: 0.8em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.table-unit2 {
+  width: 1em;
+  text-align: center;
+}
+.table-amount2 {
+  width: 1em;
+  text-align: center;
+}
+
+.info-box {
+  display: block;
+  background-color: rgba(161, 161, 161, 0.171);
+}
+
+.text-meal3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3em;
+}
+
+.preparation {
+  width: 100%;
+  font-size: 1.1rem;
+}
+.h2-preperation {
+  margin-top: 1em;
+  text-align: center;
+}
+
+.preparation li {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.profile {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 3em;
+}
+.profile span {
+  font-weight: bold;
+}
+
+.profile img {
+  padding: 2em;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+
+@media (max-width: 1200px) {
+  .meal3-maintitle {
+    display: flex;
+    justify-content: center;
+  }
+  .titlepicture img {
+    width: 100%;
+    height: auto;
+  }
+  .portion-input {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1em;
+    border-bottom: 1px solid black;
+  }
+  .portion-input input {
+    margin-top: 2em;
+    margin-bottom: 2rem;
+    margin-left: 0;
+    padding: 1.1em;
+  }
+  .portion-input input:focus {
+    border-radius: 0;
+  }
+  .portion-input button {
+    padding: 0.7em;
+    width: 100%;
+    max-width: 200px;
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  table {
+    width: 100%;
+    padding-top: 1em;
+  }
+  .table-style {
+    flex-direction: column;
+  }
+  .table-data2 {
+    width: 100%;
+  }
+  .text-meal3 {
+    flex-direction: column;
+  }
+
+  .h2-preperation {
+    text-align: center;
+    padding: 0;
+  }
+  .preparation {
+    padding: 0;
+
+    text-align: center;
+  }
+  .preparation li {
+    padding: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 1.5em;
+  }
+  .meal3-profile-title {
+    display: flex;
+    justify-content: center;
+  }
+  .profile {
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Rezept des Tages</title>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    ´
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/meal4.css" />
+
+    <script src="js/script.js"></script>
+  </head>
+
+  <body onload="includeHTML()">
+    <div w3-include-html="tamplates/header.html"></div>
+
+    <div class="content-body">
+      <div class="recipe-head">
+        <div class="recipe-title">
+          <h1 class="taco-title">Butter-Chicken</h1>
+        </div>
+        <div class="recipe-infobox">
+          <img class="recipe-pic-taco" src="img/rdt.jpg" />
+          <div class="section-text">
+            <h2 class="small-info">Zubereitung:</h2>
+            <div class="small-sub-1">
+              <div class="small-sub-1">
+                <img
+                  class="clock-icon"
+                  src="img/icons/clock-regular.svg"
+                  alt="clock"
+                />
+                <span>40min</span>
+              </div>
+              <div class="small-sub-1">
+                <img
+                  class="brain-icon"
+                  src="img/icons/brain-solid.svg"
+                  alt="clock"
+                />
+                <span>Normal</span>
+              </div>
+            </div>
+
+            <p class="info-text">
+              Das Murgh Makahni ist für den Einstieg in der Welt der Curries
+              bestens geeignet, denn die Zutaten sind alle leicht aufzutreiben!
+              Was dabei herauskommt ist ein cremiges Butter Chicken Curry,
+              welches sich gewaschen hat!
+            </p>
+            <div class="creator">
+              <img class="profile-pic" src="img/profile.png" alt="profile" />
+              <p class="azra-text">Rezept von <b>Gökay</b></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="input-field bg2-res bg2">
+        <input
+          id="number"
+          class="inp"
+          type="number"
+          min="0"
+          placeholder="Personen"
+        />
+        <button
+          onclick="calc(amountNumberMeal4, ingredients4, unit4)"
+          class="btn"
+        >
+          Rechnen
+        </button>
+      </div>
+
+      <table class="table2" id="table-contain">
+        <thead>
+          <tr class="tr2">
+            <th class="th2">Zutaten</th>
+          </tr>
+        </thead>
+        <tbody class="tbody2">
+          <tr class="tr2 bg1">
+            <td id="td0">600</td>
+            <td>g</td>
+            <td class="td-name">Hähnchenbrustfilet(s)</td>
+          </tr>
+          <tr class="tr2">
+            <td id="td1">100</td>
+            <td>g</td>
+            <td class="td-name">Joghurt, am besten mit 10% Fett</td>
+          </tr>
+          <tr class="tr2 bg1">
+            <td id="td2">2</td>
+            <td>TL</td>
+            <td class="td-name">Knoblauch, gepresst</td>
+          </tr>
+          <tr class="tr2">
+            <td id="td3">2</td>
+            <td>EL</td>
+            <td class="td-name">Ingwer, frisch, gerieben</td>
+          </tr>
+          <tr class="tr2 bg1">
+            <td id="td4">1</td>
+            <td>STK</td>
+            <td class="td-name">Garam Masala</td>
+          </tr>
+          <tr class="tr2">
+            <td id="td5">3</td>
+            <td>TL</td>
+            <td class="td-name">Salz</td>
+          </tr>
+          <tr class="tr2 bg1">
+            <td id="td6">2</td>
+            <td>El</td>
+            <td class="td-name">Kurkuma</td>
+          </tr>
+          <tr class="tr2">
+            <td id="td7">60</td>
+            <td>g</td>
+            <td class="td-name">Butter</td>
+          </tr>
+          <tr class="tr2 bg1">
+            <td id="td8">1</td>
+            <td>g</td>
+            <td class="td-name">Zwiebel(n)</td>
+          </tr>
+          <tr class="tr2">
+            <td id="td9">1</td>
+            <td>TL</td>
+            <td class="td-name">Kreuzkümmel</td>
+          </tr>
+          <tr class="tr2 bg1">
+            <td id="td10">1</td>
+            <td>EL</td>
+            <td class="td-name">Tomatenmark</td>
+          </tr>
+          <tr class="tr2">
+            <td id="td11">6</td>
+            <td>STK</td>
+            <td class="td-name">Kardamomkapsel(n)</td>
+          </tr>
+          <tr class="tr2 bg1">
+            <td id="td12">1</td>
+            <td>TL</td>
+            <td class="td-name">Nelkenpulver</td>
+          </tr>
+          <tr class="tr2">
+            <td id="td13">3</td>
+            <td>TL</td>
+            <td class="td-name">Chiliflocken</td>
+          </tr>
+          <tr class="tr2 bg1">
+            <td id="td14">1</td>
+            <td>TL</td>
+            <td class="td-name">Koriander</td>
+          </tr>
+          <tr class="tr2">
+            <td id="td15">400</td>
+            <td>ml</td>
+            <td class="td-name">Sahne</td>
+          </tr>
+          <tr class="tr2 bg1">
+            <td id="td16">1</td>
+            <td>TL</td>
+            <td class="td-name">Pfeffer</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="last-section">
+        <p class="last-section-text">
+          1. Die Hähnchenbrust in Stücke schneiden. Aus 1 TL Paprikapulver, 1 EL
+          Limonen- bzw. Zitronensaft, 1 TL Salz, 1 Becher Joghurt, 1 TL
+          Cayennepfeffer, 1 EL Garam Masala Pulver, 1 Stück Ingwer und 1
+          Knoblauchzehe eine Marinade herstellen. Das Fleisch mit der Marinade
+          mischen.
+          <br />
+          <br />
+          2. AMindestens eine Stunde einziehen lassen. Besser ist es, das
+          Fleisch bereits am Vortag zu marinieren und über Na cht in den
+          Kühlschrank zu stellen. Den Ofen auf 200 °C Ober-/Unterhitze vorheizen
+          dann das Fleisch in einer Auflaufform für 25 Minuten garen.<br />
+          <br />
+          3. ie Zwiebel klein hacken und in 2 EL Butter glasig anschwitzen. Die
+          passierten Tomaten, den Zimt, 1 TL Salz, 2 TL Cayennepfeffer, 1 Stück
+          Ingwer und 1 Knoblauchzehe hinzugeben. Alles 20 Minuten mit Deckel und
+          bei niedriger Temperatur köcheln lassen. Gelegentlich umrühren. Nun
+          die restlichen 2 EL Butter, den Honig und die Sahne hinzufügen,
+          weitere 3 Minuten köcheln. Das Fleisch aus der Marinade nehmen, in die
+          Soße geben, kurz umrühren und 2 Minuten mitköcheln lassen. Dazu passt
+          Reis oder Naan. Wer gerne Koriandergrün mag, der kann ganz am Ende
+          noch ein paar frisch gehackte Blätter hinzufügen.
+        </p>
+      </div>
+    </div>
+    <div w3-include-html="tamplates/footer.html"></div>
+  </body>
+</html>
